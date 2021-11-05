@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 dialog.setTitle("請選擇功能");
                 dialog.setMessage("請根據下方按鈕選擇要顯示的物件");
 
-                dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                dialog.setNeutralButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(MainActivity.this, "dialog關閉", Toast.LENGTH_SHORT).show();
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-                dialog.setNegativeButton("顯示list", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton("顯示list", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         showListDialog();
